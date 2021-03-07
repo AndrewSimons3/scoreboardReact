@@ -1,12 +1,6 @@
-const Header = (props) => {
-  console.log(props)
-  return (
-    <header>
-      <h1>{ props.title }</h1>
-      <span className="stats">Players: {props.totalPlayers}</span>
-    </header>
-  );
-}
+import React from 'react';
+import Header from './Header';
+
 
 const Player = (props) => {
   return (
@@ -104,7 +98,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+export default App;
