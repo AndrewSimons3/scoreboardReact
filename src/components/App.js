@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 
 
+
 const Player = (props) => {
   return (
     <div className="player">
