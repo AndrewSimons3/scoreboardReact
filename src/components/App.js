@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AddPlayerForm from './AddPlayerForm';
 import Header from './Header';
 import Player from './Player';
 
@@ -66,6 +67,8 @@ class App extends Component {
             removePlayer={this.handleRemovePlayer}
           />
         )}
+
+        <AddPlayerForm />
       </div>
     );
   }
