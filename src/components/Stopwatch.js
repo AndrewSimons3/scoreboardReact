@@ -6,6 +6,11 @@ state = {
   isRunning: false
 };
 
+handleStopwatch = () => {
+  this.setState({
+    isRunning: !this.state.isRunning
+  });
+}
 
 class Stopwatch extends Component {
   render() {
@@ -13,7 +18,8 @@ class Stopwatch extends Component {
       <div className="stopwatch">
         <h2>Stopwatch</h2>
         <span className="stopwatch-time">0</span>
-        <button>{ this.state.isRunning ? 'Stop' : 'Start'} </button>
+        <button onClick={this.handleStopwatch}>
+          { this.state.isRunning ? 'Stop' : 'Start'} </button>
         <button>Reset</button>
       </div>
     );
