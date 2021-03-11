@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import Stats from './Stats';
-import Stopwatch from './Stopwatch';
 
-state = {
-  isRunning: false
-};
-
-handleStopwatch = () => {
-  this.setState({
-    isRunning: !this.state.isRunning
-  });
-}
 
 class Stopwatch extends Component {
+
+  state = {
+    isRunning: false
+  };
+
+  handleStopwatch = () => {
+    this.setState({
+      isRunning: !this.state.isRunning
+    });
+  }
+
   render() {
     return (
       <div className="stopwatch">
